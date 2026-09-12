@@ -40,6 +40,34 @@
   cursor: pointer;
 }
 
+.property-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.property-add-button {
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.property-error {
+  margin: 0 0 16px;
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+.property-loading,
+.property-empty {
+  color: #666;
+  font-size: 0.9375rem;
+}
+
 .property-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -47,6 +75,8 @@
 }
 
 .property-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background: #ffffff;
   border-radius: 8px;
@@ -73,7 +103,34 @@
 }
 
 .property-area {
+  margin: 0 0 4px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.property-layout {
   margin: 0;
   font-size: 0.875rem;
   color: #666;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.property-card-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 0.8125rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.property-delete-button {
+  color: #dc2626;
+  border-color: #fca5a5 !important;
 }

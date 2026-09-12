@@ -1,0 +1,77 @@
+/* 物件登録・編集フォーム（モーダル）のスタイル */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  z-index: 10;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-form h2 {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.modal-form label {
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+  color: #444;
+}
+
+.modal-form input {
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-error {
+  margin: -8px 0 16px;
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.modal-actions button {
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button[type='submit'] {
+  color: #fff;
+  background-color: #2563eb;
+}
+
+.modal-actions button[type='submit']:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.modal-cancel {
+  color: #333;
+  background-color: #e5e7eb;
+}
