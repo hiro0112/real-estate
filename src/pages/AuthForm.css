@@ -1,0 +1,75 @@
+/* ログイン画面・会員登録画面共通のシンプルなフォームスタイル */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f6f8;
+  padding: 16px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h1 {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #222;
+}
+
+.auth-form label {
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+  color: #444;
+}
+
+.auth-form input {
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-form button {
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  margin: -8px 0 16px;
+  font-size: 0.875rem;
+  color: #dc2626;
+}
+
+.auth-success {
+  margin: -8px 0 16px;
+  font-size: 0.875rem;
+  color: #16a34a;
+}
+
+.auth-switch {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #444;
+}
