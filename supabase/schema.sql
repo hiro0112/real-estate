@@ -50,12 +50,14 @@ create trigger set_properties_updated_at
 -- ------------------------------------------------------------
 alter table public.properties enable row level security;
 
--- 自分が登録した物件のみ閲覧できる
+-- 「物件を探す」画面用：ログイン中のユーザーであれば全員が登録された全物件を閲覧できる
+-- （編集・削除は下記のUPDATE/DELETEポリシーにより登録者本人のみに制限される）
 drop policy if exists "Users can view their own properties" on public.properties;
-create policy "Users can view their own properties"
+drop policy if exists "Authenticated users can view all properties" on public.properties;
+create policy "Authenticated users can view all properties"
   on public.properties
   for select
-  using (auth.uid() = user_id);
+  using (auth.role() = 'authenticated');
 
 -- 自分のuser_idとしてのみ物件を登録できる
 drop policy if exists "Users can insert their own properties" on public.properties;

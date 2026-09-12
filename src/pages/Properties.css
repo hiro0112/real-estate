@@ -1,43 +1,14 @@
-/* 物件一覧画面のスタイル */
+/* 物件一覧画面（物件を探す／自分の物件を管理する 共通）のスタイル */
 .property-page {
   min-height: 100vh;
   background-color: #f5f6f8;
   padding: 24px;
 }
 
-.property-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.property-header h1 {
+.property-page-title {
+  margin: 0 0 16px;
   font-size: 1.5rem;
   color: #222;
-}
-
-.property-header-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.property-user-email {
-  font-size: 0.875rem;
-  color: #555;
-}
-
-.property-header-right button {
-  padding: 8px 16px;
-  font-size: 0.875rem;
-  color: #fff;
-  background-color: #ef4444;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .property-toolbar {
